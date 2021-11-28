@@ -2,22 +2,29 @@ const MenuList = [
   {
     id: 1,
     name: "Home",
-    linkSrc: "#",
+    linkSrc: "#home",
   },
   {
     id: 2,
-    name: "Menu",
-    linkSrc: "#",
+    name: "Top Dishes",
+    linkSrc: "#topDish",
   },
   {
     id: 3,
-    name: "About",
-    linkSrc: "#",
+    name: "Menu",
+    linkSrc: "#menu",
   },
+
   {
     id: 4,
+    name: "About Us",
+    linkSrc: "#about",
+  },
+
+  {
+    id: 5,
     name: "Contact Us",
-    linkSrc: "#",
+    linkSrc: "#contact",
   },
 ];
 

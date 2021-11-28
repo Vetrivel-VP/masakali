@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/Header.css";
 import Logo from "../img/masakali-nobg.png";
 import { BiMenuAltRight } from "react-icons/bi";

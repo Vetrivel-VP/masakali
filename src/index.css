@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -11,6 +12,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
 }
 
 code {
@@ -55,4 +60,26 @@ img {
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
+}
+
+.section_title {
+  position: relative;
+  font-size: 1.5rem;
+  color: #848484;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section_title::after {
+  position: absolute;
+  content: "";
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2.5rem;
+  background-color: #c8fa76;
+  transition: all 0.3s cubic-bezier(0.5, -0.75, 0.7, 2);
 }

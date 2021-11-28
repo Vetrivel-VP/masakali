@@ -9,6 +9,9 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  background: #070b0f;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 }
 
 .logo_img {
@@ -84,6 +87,33 @@ header {
 
 .menu .our_menu:hover {
   box-shadow: 0px 0px 4px #496c18;
+}
+
+@media screen and (min-width: 680px) {
+  .logo_img {
+    width: 8rem;
+  }
+  .toggleMenu {
+    display: none;
+  }
+
+  .menu {
+    transform: translateX(0);
+    position: unset;
+    background: transparent;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    padding-bottom: 0px;
+  }
+
+  .menu ul {
+    display: flex;
+    width: unset;
+  }
+  .menu ul li {
+    margin: 0px 5px;
+  }
 }
 
 @media screen and (min-width: 1080px) {

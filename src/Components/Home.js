@@ -10,7 +10,7 @@ import Discount from "../img/discount.png";
 
 function Home() {
   return (
-    <div className="home section grid_layout">
+    <section className="home section grid_layout" id="home">
       <div className="home_data">
         <div className="quote">
           <p>
@@ -88,7 +88,7 @@ function Home() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
