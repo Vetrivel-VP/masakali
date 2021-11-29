@@ -91,7 +91,7 @@ header {
 
 @media screen and (min-width: 680px) {
   .logo_img {
-    width: 8rem;
+    width: 7rem;
   }
   .toggleMenu {
     display: none;
@@ -111,8 +111,16 @@ header {
     display: flex;
     width: unset;
   }
+
   .menu ul li {
-    margin: 0px 5px;
+    margin: 0px 0px;
+  }
+  .menu ul li a {
+    font-size: 12px;
+  }
+
+  .menu .our_menu {
+    padding: 5px 15px;
   }
 }
 

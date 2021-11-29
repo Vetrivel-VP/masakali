@@ -366,10 +366,15 @@
     justify-content: space-between;
     padding: 10px 25px;
     height: 90px;
+    width: 90%;
   }
 
   .bookTable .inputBox {
-    width: 350px;
+    width: 225px;
+  }
+
+  .bookTable .date_time {
+    width: 90%;
   }
 
   .bookTable .date_time_picker {
@@ -426,6 +431,11 @@
   .fastDeliver p,
   .hearts p {
     font-size: 18px;
+  }
+
+  .hearts i,
+  p {
+    color: #fff;
   }
 
   .hearts {
