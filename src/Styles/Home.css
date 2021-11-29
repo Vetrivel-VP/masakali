@@ -1,5 +1,5 @@
 .home {
-  height: 100vh;
+  height: auto;
   row-gap: 1rem;
 }
 
@@ -245,8 +245,114 @@
   color: #ce0229;
 }
 
+.MuiInput-root {
+  color: #fff !important;
+  font-size: 13px !important;
+}
+
+.MuiInput-underline:before {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.42) !important;
+}
+
+.MuiInputLabel-animated {
+  transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+    transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  color: #bfbfbf !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: rgb(200, 250, 118) !important;
+}
+
+.bookTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background: linear-gradient(#2b3638, #070c0e);
+  border-radius: 35px;
+  box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.1),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+  color: #f1f1f1;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.9));
+
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 0%;
+  padding: 10px;
+  border-radius: 20px;
+}
+.date_time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.bookTable .inputBox {
+  width: 48%;
+  height: 42px;
+  position: relative;
+}
+
+.bookTable .inputBox input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.42);
+  padding-left: 25px;
+  color: #f1f1f1;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bookTable .inputBox input:focus {
+  border-bottom: 1px solid #c5fa6f;
+  transition: all 0.3s;
+}
+
+.bookTable .inputBox input::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: #848484;
+}
+
+.bookTable .inputBox i {
+  position: absolute;
+  width: 40px;
+  height: 42px;
+  left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: #f1f1f1;
+}
+
+.bookTable .bookMe {
+  padding: 10px 20px;
+  background: #c5fa6f;
+  border-radius: 10px;
+  color: #2b3638;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+
+.bookTable .bookMe:hover {
+  filter: drop-shadow(0px 0px 4px #c5fa6f);
+}
+
 @media screen and (min-width: 680px) {
   .home {
+    grid-template-rows: repeat(1, 1fr);
+  }
+  .home .homeContainer {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
@@ -254,11 +360,36 @@
   .quote p {
     font-size: 2rem;
   }
+
+  .bookTable {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 25px;
+    height: 90px;
+  }
+
+  .bookTable .inputBox {
+    width: 350px;
+  }
+
+  .bookTable .date_time_picker {
+    margin: 0px 25px;
+  }
+
+  .bookTable .bookMe {
+    width: 160px;
+  }
 }
 
 @media screen and (min-width: 1080px) {
   .home {
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+  }
+  .home .homeContainer {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+
     align-items: center;
   }
 
@@ -309,5 +440,19 @@
     width: 25px;
     right: 5px;
     position: absolute;
+  }
+
+  .bookTable {
+    width: 65% !important;
+    margin-top: -5%;
+  }
+
+  .date_time {
+    width: 70%;
+    justify-content: unset;
+  }
+
+  .date_time .date_time_picker {
+    margin-left: auto;
   }
 }

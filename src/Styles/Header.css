@@ -9,7 +9,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background: #070b0f;
+  /* background: #070b0f; */
   transition-timing-function: ease-in;
   transition: all 0.5s;
 }
