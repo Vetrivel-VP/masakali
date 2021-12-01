@@ -2,8 +2,10 @@ import React from "react";
 import "../Styles/OurTopContainer.css";
 import { FaPhoneAlt, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import dish from "../img/Banner.png";
+import AOS from "aos";
 
 function OurTopDishes() {
+  AOS.refresh();
   const moveLeft = () => {
     document.querySelector(".ourTopContainer").scrollLeft -= 600;
   };

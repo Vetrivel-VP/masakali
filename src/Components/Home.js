@@ -76,7 +76,7 @@ function Home() {
           </div>
         </div>
         <div className="home_img">
-          <img src={Mint} alt="" className="Mint" />
+          <img src={Mint} alt="" className="Mint" data-aos-delay="200" />
           <img src={Banner} alt="" />
           <div className="fastDeliver">
             <i>
@@ -86,10 +86,10 @@ function Home() {
           </div>
 
           <div className="hearts">
-            <i>
+            <i className="heart_i">
               <FaHeart />
             </i>
-            <p>1</p>
+            <p className="heart_p">1</p>
           </div>
 
           <div className="discount">

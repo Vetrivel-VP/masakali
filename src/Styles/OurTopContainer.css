@@ -123,9 +123,6 @@
   font-weight: bold;
 }
 
-@media screen and (min-width: 680px) {
-}
-
 @media screen and (min-width: 1080px) {
   .left,
   .right {

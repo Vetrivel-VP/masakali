@@ -20,12 +20,6 @@ const MenuList = [
     name: "About Us",
     linkSrc: "#about",
   },
-
-  {
-    id: 5,
-    name: "Contact Us",
-    linkSrc: "#contact",
-  },
 ];
 
 export { MenuList };

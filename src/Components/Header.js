@@ -28,7 +28,7 @@ function Header() {
         </ul>
 
         <a href="#" className="our_menu">
-          Menu
+          Contact us
         </a>
       </div>
 

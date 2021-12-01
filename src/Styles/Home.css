@@ -209,6 +209,10 @@
   color: #222;
 }
 
+.hearts .heart_i,
+.heart_p {
+  color: #fff !important;
+}
 .discount {
   width: 180px;
   height: 60px;
@@ -247,7 +251,7 @@
 
 .MuiInput-root {
   color: #fff !important;
-  font-size: 13px !important;
+  /* font-size: 1px !important; */
 }
 
 .MuiInput-underline:before {
@@ -258,6 +262,7 @@
   transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
     transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   color: #bfbfbf !important;
+  /* font-size: 12px !important; */
 }
 
 .MuiFormLabel-root.Mui-focused {
@@ -433,11 +438,6 @@
     font-size: 18px;
   }
 
-  .hearts i,
-  p {
-    color: #fff;
-  }
-
   .hearts {
     right: 10%;
   }
@@ -458,7 +458,7 @@
   }
 
   .date_time {
-    width: 70%;
+    width: 70% !important;
     justify-content: unset;
   }
 
